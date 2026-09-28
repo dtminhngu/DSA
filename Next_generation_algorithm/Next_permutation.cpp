@@ -9,7 +9,7 @@ void Init () { // x={1,2,3,...n}
     for (int i=0; i<n; i++) x[i] = i+1;
     OK = true;
 }
-//1 4 
+
 void Res () {
     for (int i=0; i<n; i++) cout << x[i];
     cout << " ";
@@ -26,7 +26,7 @@ void Next_Permutation () {
     }
     else OK = false;
 }
-
+// 1 2
 int main () {
     int t;
     cin >> t;
