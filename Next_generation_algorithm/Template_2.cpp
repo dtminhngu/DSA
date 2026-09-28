@@ -29,7 +29,7 @@ int main () {
     cin >> t;
     while (t--) {
         Init ();
-            while (OK) {
+        while (OK) {
             Res ();
             Next_Combination ();
         }
