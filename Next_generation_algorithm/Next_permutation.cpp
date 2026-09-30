@@ -4,7 +4,7 @@ using namespace std;
 int n, x[100];
 bool OK = true;
 
-void Init () { // x={1,2,3,...n}
+void Init () { 
     cin >> n;
     for (int i=0; i<n; i++) x[i] = i+1;
     OK = true;
@@ -20,13 +20,13 @@ void Next_Permutation () {
     while (i>=0 && x[i] >= x[i+1]) i--;
     if (i>=0) {
         int k=n-1;
-        while (x[k] < x[i]) k--;
+        while (x[k] <= x[i]) k--;
         swap (x[i], x[k]);
         reverse (x+i+1, x+n);
     }
     else OK = false;
 }
-// 1 2
+
 int main () {
     int t;
     cin >> t;
