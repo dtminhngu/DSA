@@ -6,7 +6,7 @@ bool OK = true;
 
 void Init() {
     cin >> n >> k;
-    for (int i=1; i<=k; i++) x[i] = i;
+    for (int i=1; i<=k; i++) x[i] = i + 1;
 }
 
 void Res () {
