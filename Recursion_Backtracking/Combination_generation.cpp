@@ -8,6 +8,8 @@ void Print () {
     cout << endl;
 }
 
+//n=3, k=2
+
 void Try (int i) {
     if (i==k) {
         Print ();
