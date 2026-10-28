@@ -21,7 +21,7 @@ void Try (int i, bool visited[100], vector <int> &nums, vector <int> &path, vect
 vector <vector<int>> res (vector <int> &nums) {
     vector <int> path;
     vector <vector<int>> res;
-    bool visited [100];
+    bool visited [100] = {false};
     Try (0, visited, nums, path, res);
     return res;
 }
