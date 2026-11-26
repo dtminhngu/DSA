@@ -11,6 +11,7 @@ void Initialization () { // X = {x1,x2,...,xn} = {0,0,0,0}
 
 void Result () { // X = {x1,x2,..xn}
     for (int i=1; i<=n; i++) cout << x[i] << " ";
+    cout <<  "\n";
 }
 
 void Next_bits_string () {
@@ -29,7 +30,6 @@ int main () {
     while (OK) { //run a loop -> generate remaining configuration
         Result ();
         Next_bits_string ();
-        cout << endl;
     }
     return 0;
 }
