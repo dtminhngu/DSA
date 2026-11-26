@@ -2,7 +2,7 @@
 using namespace std;
 
 string prefix_suffix (string s) {
-    stack <string> st; // Khai báo stack kiểu string để lưu lại các toán hạng và các cụm trung tố con tạo thành
+    stack <string> st; // Khai báo stack kiểu string để lưu lại các toán hạng và các cụm hậu tố con tạo thành
     for (int i=s.length()-1; i>=0; i--) {
         //1. Nếu s[i] là toán hạng -> ép thành string và push vào stack
         // *string (size, char) -> Ép một kí tự char thành string hoặc tạo nhanh một chuỗi gồm nhiều kí tự giống nhau
